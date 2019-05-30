@@ -9,15 +9,11 @@ int cube(int x) { /*calcula o cubo de um número*/
 }
 
 int factorial(int x) { /*calcula o fatorial de um número*/
-    if (x == 0 || x == 1) return 1;
-
-    int i, fat;
-
-    for (fat = 1; x > 1; x = x - 1) { /*laço para calcular o fatorial do numero*/
-         fat = fat * x;
-    }     
-
-    return fat;
+    if(x == 0) {
+        return 1;
+    } else {
+        return x * factorial(x-1);
+    }
 }
 
 
