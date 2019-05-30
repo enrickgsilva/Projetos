@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int binary_search(int *vetor, int size, int element) { /*algorítimo de procura binária*/
-    int i, middle;
+    int i, middle, j = 0;
     int beggin = 0;
     int end = size - 1;
 
@@ -46,7 +46,7 @@ void bubblesort(int *vetor, int size) { /*algoritimo de ordenação do menor par
 }
 
 int main() {
-    int array[] = {1, 6, 9, 130, 2, 200, 15};
+    int array[] = {1, 3, 4, 7, 9, 14, 15};
     int size = sizeof(array) / sizeof(int);
     bubblesort(array, size);
     return 0;
