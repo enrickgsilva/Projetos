@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - firstprograma",
+            "request": "launch",
+            "mainClass": "primeiroprograma.firstprograma"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - firstprogram",
+            "request": "launch",
+            "mainClass": "primeiroprograma.firstprogram"
+        }
+    ]
+}
