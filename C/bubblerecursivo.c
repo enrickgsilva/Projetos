@@ -13,6 +13,14 @@ void print(int *v, int tam)
     return;
 }
 
+void swap (int *v1, int *v2) 
+{ /*função que faz a troca dos valores para ordenar a função*/
+    int aux = *v1;
+    *v1 = *v2;
+    *v2 = aux;
+    return;
+}
+
 void bubble(int *v, int tam, int i, int j) 
 { /*algorítimo bubble sort de forma recursiva completa*/
     if(i == tam) 
@@ -28,18 +36,16 @@ void bubble(int *v, int tam, int i, int j)
     }
     if(v[j] < v[i]) 
     {
-        int temp = v[i];
-        v[i] = v[j];
-        v[j] = temp;
+        swap(&v[i], &v[j]); /*passa o endereço de memória dos vetores nas posições atuais*/
     }
     bubble(v, tam, i, ++j);
     return;
 }
 
 int main() 
-{
+{ /*função para definir o vetor a ser ordenado*/
     int vetor[] = {3,6,4,9,25,1};
-    int tam = sizeof(vetor) / sizeof(int);
+    int tam = sizeof(vetor) / sizeof(int); /*tam recebe o tamanho exato do vetor*/
     bubble(vetor, tam, 0, 1);
     return 0;
 }
