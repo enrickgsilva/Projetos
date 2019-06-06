@@ -20,7 +20,7 @@
     float: left;
 }
 
-.menu a {
+.menu a strong{
     padding: 15px;
     display: block;
     text-decoration: none;
@@ -38,9 +38,9 @@
     visibility: visible;
 }
 
-.menu a:hover {
-    background-color: #f4f4f4;
-    color: #555;
+.menu a strong:hover {
+    background-color:rgb(66, 24, 105);
+    color: #fff;
 }
 
 .menu ul ul li {
@@ -48,7 +48,7 @@
     border-bottom: solid 1px #ccc;
 }
 
-.menu ul ul li a {
+.menu ul ul li a strong{
     background-color: #FFD700;
     color: #222;
     font-style: italic;
@@ -95,4 +95,25 @@ label[for="bt_menu"] {
         height: auto;
         max-height: 200px;
     }
+}
+
+.eng {
+    width: 20px;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 1300px;
+}
+
+.eng:hover {
+    margin-top: -5;
+    margin-left: 1298px;
+    width: 22px;
+}
+
+#search {
+    position: absolute;
+    margin-top: -37px;
+    margin-left: 720px;
+    width: 30%;
+    padding: 3px;
 }

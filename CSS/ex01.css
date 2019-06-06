@@ -1,0 +1,18 @@
+p {
+    font-size: 25px;
+    font-family: monospace;
+    font-style: oblique;
+}
+p {
+    line-height: 3px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-indent: 30px;
+}
+
+
+#bot {
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 600px;
+}
