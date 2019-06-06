@@ -1,3 +1,4 @@
-function config() {
-   windows.document.alert("Ta loco carai!");
-}
+const groups = document.getElementsByClassName("groups");
+
+groups.addEventListener("click", clickgroup());
+

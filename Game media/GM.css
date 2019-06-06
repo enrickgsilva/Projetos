@@ -8,7 +8,6 @@
     height: 50px;
     background-color: #222;
     font-family: "Arial";
-
 }
 .menu ul {
     list-style: none;
@@ -116,4 +115,17 @@ label[for="bt_menu"] {
     margin-left: 720px;
     width: 30%;
     padding: 3px;
+}
+
+.lupa {
+    position: absolute;
+    margin-top: -34.9px;
+    margin-left: 1100px;
+}
+
+#ron {
+    width: 800px;
+    position: static;
+    margin-top: 50px;
+    margin-left: 250px;
 }

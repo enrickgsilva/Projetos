@@ -1,0 +1,98 @@
+* { /*código para a página inteira */
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    width: 100%; /* Largura do objeto*/
+    height: 50px; /* Altura do objeto */
+    background-color: #222; /* cor do menu */
+    font-family: Arial; /* fonte usada no menu */
+}
+
+#menu ul {
+    list-style: none; /* retira as bolinhas do menu */
+    position: relative; /* define a posição relativa do menu */
+}
+
+#menu ul li {
+    width: 150px; /* distância entre os nomes do menu */
+    float:left; /* deixa os nomes do menu, um ao lado do outro */
+}
+
+#menu a {
+    padding: 15px; /*afastamento dos nomes do menu*/
+    display: block; /* VERIFICAR ... */
+    text-decoration: none; /* sem decoração de texto */
+    text-align: center; /* alinhado ao centro */
+    background-color: #222; /*  cor de fundo dos menus */
+    color: #fff; /* cor da letra */
+}
+
+#menu ul ul {
+    position: absolute; /* posição dos submenus */
+    visibility:hidden; /* submenus ficam escondidos */
+}
+
+#menu ul li:hover ul { /* ao passar o mouse em cima do menu ele libera os submenus */
+    visibility: visible;
+}
+
+#menu a:hover { /* quando passa em mouse em cima o menu selecionado fica roxo */
+    background-color: rgb(66, 24, 105);;
+    color: #fff;
+}
+
+#menu ul ul li { /* os submenus ficam um abaixo do outro */
+    float: none; /* comando para deixar os menus um abaixo do outro */
+    border-bottom: solid 1px #ccc;
+}
+
+#menu ul ul li a{ /* deixa os submenus amarelos e com cor de fonte diferentes */
+    background-color: #FFD700;
+    color: #222;
+    font-style: italic;
+}
+
+label[for="bt_menu"] { /* criação do botão de menu para usar no celular */
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    font-family: "Arial";
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+#bt_menu { /* retira o botão do menu da tela */
+    display:none;
+}
+
+label[for="bt_menu"] { /* não mostrar o botão */
+    display: none;
+}
+
+@media(max-width: 800px) {
+ /* quando o usuário diminuir a página o menu se movimenta com ele */   
+    label[for="bt_menu"] {
+    display: none;
+}
+    #menu ul li {
+        width: 100%;
+        float: none;
+    }
+
+    #menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+
+    #menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+}
