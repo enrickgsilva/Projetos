@@ -4,39 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GM</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+    
 </head>
 <body>
-
-    <input type="checkbox" id="bt_menu">
-    <label for="bt_menu">&#9776;</label>
-
-    <nav id="menu">
-        <ul> <!-- lista desordenada de itens -->
-            <li><a href="index.html"><strong>Página inicial</strong></a></li> <!-- lista de filhos de ul -->
-            <li><a href="#"><strong>Perfil</strong></a></li>
-            
-            <li><a href="#"><strong>Grupos</strong></a>
-                <ul>
-                    <li><a href="index2.html"><strong>Criar grupos</strong></a></li>
-                    <li><a href="#"><strong>Administrar grupos</strong></a></li>
-                    <li><a href="#"><strong>Entrar em um grupo</strong></a></li>
-                </ul>
+    <nav>
+        <div class="logo">
+            <h4>Gamestart</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#"><strong>Página inicial</strong></a>
             </li>
-                
-            <li><a href="#"><strong>Jogos</strong></a>
-                <ul>
-                    <li><a href="index2.html"><strong>MMO</strong></a></li>
-                    <li><a href="#"><strong>MOBA</strong></a></li>
-                    <li><a href="#"><strong>RPG</strong></a></li>
-                    <li><a href="#"><strong>Ação</strong></a></li>
+            <li>
+                <a href="#"><strong>Perfil</strong></a>
+            </li>
+            <li>
+                <a href="#"><strong>Grupos</strong></a>
+            </li>
+            <li>
+                <a href="#"><strong>Jogos</strong></a>
             </li>
         </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
-    <div class="background">
-        <img src="backgames.jpg" alt="back">
-    </div>
 
     <script src="back.js"></script>
 </body>
