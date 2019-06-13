@@ -1,0 +1,17 @@
+ESC:w - salva o que você escreveu
+ESC:q sai do vim, se você já salvou o que modificou ou não
+ESC:wq ou :x ou ZZ - Sai mesmo que você não tenha salvo
+ESC: set autowrite ou :set aw - salva a cada alteração efetuada
+ESC:split [arquivo/caminho] - abre um novo arquivo em janela horizontal
+
+:u desfaz a última alteração feita no documento
+:U para defazer todas as mudanças efetuadasd em uma linha inteira
+:CTRL + R para refazer a última coisa que você desfez
+:x - deleta o caractere onde o cursor estiver
+:X - deleta o caractere de trás do cursor
+:dw - deleta a partir do cursor até o começo da próxima palavra
+:dd - deleta a linha inteira incluindo o [enter] que houver no final
+:C - deleta de onde o cursor estiver até o final da linha e entra em modo de inserção a partir dali
+:ce deleta do cursor até o final da palavra e entra em modo de inserção
+
+linha de teste

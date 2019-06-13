@@ -54,7 +54,7 @@ void filter(int (*function)(), int vetor[], int tam) { /*função para filtrar o
     return;
 }
 
-void map(int (*function)(int), int array[], int tam) { /*função de mapeamento*/
+void map(int (*function)(int), int *array, int tam) { /*função de mapeamento*/
     int i;
     int vetor_meio[tam];
 
