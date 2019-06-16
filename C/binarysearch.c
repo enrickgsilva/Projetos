@@ -39,14 +39,14 @@ void bubblesort(int *vetor, int size) { /*algoritimo de ordenação do menor par
     if(x == -1) {
         printf("Elemento nao encontrado\n");
     } else {
-        printf("Elemento %d esta na posicao %d do Array\n", element, x);
+        printf("Elemento %d esta na posicao %d do Array\n", element, x+1);
     }
 
     return;
 }
 
 int main() {
-    int array[] = {1, 3, 4, 7, 9, 14, 15};
+    int array[] = {5, 4, 3, 2, 1};
     int size = sizeof(array) / sizeof(int);
     bubblesort(array, size);
     return 0;
