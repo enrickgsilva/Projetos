@@ -17,11 +17,11 @@ struct node* add(struct node *head, int item) { /*Adiciona novos nós e elemento
     return new_node;
 }
 
-struct node* display(struct node *head) { /*Mostra todos os itens da lista*/
+ void display(struct node *head) { /*Mostra todos os itens da lista*/
     while(head != NULL) {
         printf("%d\n", head->item);
         head = head->next;
-    }
+ }
     return;
 }
 
@@ -34,5 +34,7 @@ int main() {
     list = add(list, 81);
     list = add(list, 243);
 
+    printf("Lista completa:\n");
+    display(list);
     return 0;
 }
